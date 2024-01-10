@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+.wrap {
+  background-image: url(../images/pc-bg.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+  .bg-decolation {
+    content: '';
+    background-image:url(../images/bg-decolation.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  p {
+    padding: 20px;
+  }
+  .top-contents {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+/* menu */
+.top-menu {
+  text-align: left;
+  flex-shrink: 0;
+  position: relative;
+  left: 0vw;
+}
+
+.top-menu-inner {
+  position: sticky;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+
+.top-menu-inner h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.top-menu-inner ul {
+  list-style-type: disc;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.top-menu-inner li {
+  font-size: 14px;
+  margin-top: 15px;
+}
+/* first-view */
+.first-view {
+  height: 763px;
+}
+
+.main-contnts {
+  width: 80%;
+}
+/* about */
+.about-txt p {
+  line-height: 2.5;
+}
+
+.about-contents img {
+  padding: 80px 0;
+}
+
+.about-contents, .intro {
+  margin: 200px 0;
+}
+
+/* animal-list */
+
+.intro h2 img, .access h2 img {
+  width: 25%;
+}
+
+.about h2, .intro h2,.intro h3, .animal-desc-contnts h2, .animal-desc-contnts h3 {
+  text-align: center;
+}
+
+.animal-list { 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 60px;
+}
+
+.animal-list {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+.animal-list li {
+  padding-bottom: 100px;
+}
+
+.animal-list li a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.animal-list span {
+  padding: 20px 0;
+  font-size: 1.8rem
+}
+
+/* access */
+.access-list { 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
+.access-list li {
+  padding: 50px 0;
+}
+
+.access-list img {
+  width: 50%;
+}
+
+/* info */
+.info {
+  margin-bottom: 200px;
+}
+.info h2 {
+  margin-top: 200px;
+  line-height: 2.5;
+}
+
+.link {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.link img {
+  margin-top: 50px;
+}
+
+.info p {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+/* btn */
+.btntransform{
+  margin-top: 50px;
+  /*丸の基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/	
+  display: inline-block;
+  padding:0 0 0 10px;
+  line-height: 50px;
+  color: #475245;
+  text-decoration: none;
+  outline: none;
+}
+
+/* 丸が動く */
+.btntransform::before{
+ content:'';
+  /*絶対配置で丸の位置を決める*/
+ position:absolute;
+ left:-14px;
+ z-index: -1;
+  /*丸の形状*/
+ width:50px;
+ height:50px;
+ background:#f2ccd3;
+ border-radius:25px;
+  /*アニメーションの指定*/
+  transition:.3s ease-out;
+}
+
+/*hoverした際の形状*/
+.btntransform:hover::before{
+width:150px;
+}
+
+/* 矢印の形状 */
+.btntransform::after{
+position: absolute;
+  content: '';
+  top: 1.4em;
+  right: -10px;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: rotate(45deg);
+}
