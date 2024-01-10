@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+
+/* 全体共通ここから */
+
+h2 img{
+    height: 30px;
+    margin:20px 0;
+}
+
+
+.about,.metro,.car,.bus {
+    margin: 40px 0;
+    /* セクション間の余白 */
+}
+
+
+/* topへ戻るボタン↓ */
+
+.pagetop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: -75px;
+}
+
+.pagetop img {
+    max-width: 50%;
+}
+
+/* topへ戻るボタン↑ */
+
+
+
+/* アバウトここから */
+
+.g-map {
+    margin: 0;
+    padding: 0;
+}
+
+tr{
+    display: flex;
+    flex-direction: column;
+}
+
+th{
+    text-align: left;
+}
+
+.tel img {
+height: 18px;
+margin: 0 1px;
+}
+
+
+/* 主要都市からのアクセスここから */
+
+
+.metro-area{
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 40px;
+    font-weight:500;
+}
+
+.metro-icon img {
+    width: 113px;
+} 
+
+.metro-text{
+    width: 29px;
+    margin: 0 13px;
+}
+
+.bow{
+    width: 42px;
+    margin: 8px -7px;
+}
+
+
+.metro-time p{
+    margin: 0 13px;
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+
+/* シャトルバスここから */
+
+.bus-pic:hover{
+    opacity: 50%;
+}
+  
+
+/* 矢印（bow2）ここから */
+
+.bow2-text{
+    margin: 2% 8%;
+    text-decoration:underline;
+    
+}
+
+.bow2-text:hover{
+    opacity: 50%;
+    
+}
+
+.bow2 img{
+    width: 16px;
+    margin: 0 8px;
+}
+
+

@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+.title-text p {
+  padding: 20px 0 ;
+  text-align: center;
+}
+
+.about h2 img {
+  width: 59.8%;
+}
+
+.about h3 {
+  padding: 40px 0;
+  color: #f2b3be;
+}
+
+.bg-decolation-01 {
+  padding-bottom: 20px;
+}
+
+.intro h2 img,.animal-desc-contnts h2 img {
+  width: 25%;
+  margin-top: 40px;
+}
+
+.about h2, .intro h2,.intro h3, .animal-desc-contnts h2, .animal-desc-contnts h3 {
+  text-align: center;
+}
+
+.area-01, .area-02, .area-03 {
+  margin-top: 40px;
+}
+
+.area-01 h3, .area-02 h3, .area-03 h3 {
+  padding-bottom: 20px;
+}
+
+.animal-list { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.animal-list li a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.animal-list span {
+  padding: 10px 0;
+  font-size: 12px
+}
+
+.animal-no-13 {
+  margin: 0 auto;
+}
+
+.area-03 ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.contents-wrap {
+  margin-bottom: 80px;
+}
+
+.desc-contents {
+  position: relative;
+  z-index: 0;
+}
+
+.desc-contents::after {
+  content:'';
+  background-color: #f2b3be;
+  opacity: 0.3;
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  z-index: 1;
+}
+
+ .animal-name {
+  height: 40px;
+  padding-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+}
+
+.decoration-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-text-stroke: 1px #fff;
+  color: rgb(255,255,255,0.1);
+  font-size: 50px;
+  z-index: -1;
+}
+
+.room {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.desc-contents ul {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.desc-contents-text {
+  height: 190px;
+}
+
+/* .animal-name::after {
+  content: 'Sand Cat';
+  position: relative;
+  display: flex;
+  bottom: 68px;
+  -webkit-text-stroke: 1px #fff;
+  color: rgb(255,255,255,0.1);
+  font-size: 50px;
+  z-index: -1;
+} */
+
+
+
+.slider-3 .slick-slide {
+    margin: 0 60px;
+    padding: 40px 0;
+    position: relative;
+  }
+
+  .slider-3 .slick-slide .slide-img {
+    width: 300px;
+    transition: all 0.6s ease 0.4s;
+    opacity: 0.8;
+    overflow: hidden;
+  }
+
+  .slider-3 .slick-slide.slick-current .slide-img {
+    opacity: 1;
+  }
+
+  .slider-3 .slick-slide .slide-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .slider-3 .slick-arrow {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transform: translateY(-50%);
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    font-size: 0;
+    z-index: 1;
+  }
+
+  .slider-3 .slick-arrow::before {
+    content: '';
+    top: 24px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    display: block;
+    border: 1px solid #f2b3be;
+    border-width: 6px 6px 0 0;
+    transform: rotate(45deg);
+  }
+
+  .slider-3 .slick-next { 
+    top: 30%;
+    right: -3%;
+  }
+  
+  .slider-3 .slick-prev {
+    top: 30%;
+    left: -2.3%;
+  }
+  @media(min-width:667px) {
+    .slider-3 .slick-next { 
+      right: 19.8%;
+    }
+    .slider-3 .slick-prev {
+      left: 20.4%;
+    }
+  }
+
+  .slider-3 .slick-next::before {
+    left: 6vw;
+  }
+
+  .slider-3 .slick-prev::before {
+    right: 6vw;
+    border-width: 0 0 6px 6px;
+  }
+
+  .dots-3 .slick-dots {
+    text-align: center;
+  }
+
+  .dots-3 .slick-dots li {
+    display: inline-block;
+  }
+
+  .dots-3 .slick-dots button {
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+    padding: 0;
+    display: block;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background: #bcbcbc;
+    border-radius: 50%; font-size: 0;
+  }
+
+  .dots-3 .slick-dots .slick-active button {
+    background: #f2b3be;
+  }
+  /* topへ戻るボタン↓ */
+.pagetop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: -75px;
+  z-index: 9999;
+}
+
+.pagetop img {
+  max-width: 50%;
+}
+/* topへ戻るボタン↑ */
