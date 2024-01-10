@@ -1,0 +1,104 @@
+
+/* topへ戻るボタン */
+.pagetop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: -75px;
+}
+
+.pagetop img {
+  max-width: 50%;
+}
+
+
+/* 導入文の行間、文字間、余白 */
+.greeting {
+  line-height: 49px;
+}
+
+h2 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-weight: normal;
+  letter-spacing: 0.09em;
+}
+
+
+/* カラー番号　大きさ、位置 */
+.flex-container>img {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-right: 7px;
+}
+
+
+/* 場所説明 */
+.flex-container {
+  display: flex;
+  line-height: 30px;
+}
+
+
+/* 各フロア間の余白,足跡 */
+.img-2f:before {
+  position: relative;
+  bottom: 60px;
+  left: 30px;
+  content: '';
+  background-image: url(../img/map/foot-cat.png);
+  background-repeat: no-repeat;
+  background-position: right bottom 50%;
+  height: 98px;
+  display: block;
+}
+
+.img-ground:before {
+  position: relative;
+  bottom: 18px;
+  left: 20px;
+  content: '';
+  background-image: url(../img/map/foot-frog.png);
+  background-repeat: no-repeat;
+  background-position: right bottom 50%;
+  height: 98px;
+  display: block;
+}
+
+.where-ground:after {
+  position: relative;
+  left: 10px;
+  bottom: -25px;
+  content: '';
+  background-image: url(../img/map/foot-duck.png);
+  background-repeat: no-repeat;
+  background-position: right bottom -35%;
+  height: 98px;
+  display: block;
+}
+
+/* 各フロア地図,場所説明間の余白20px */
+img.img-1f {
+  margin-bottom: 20px;
+}
+
+img.img-2f {
+  margin-bottom: 30px;
+}
+
+img.ground {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+/* フッター */
+.footer-container {
+  display: flex;
+  margin-top: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

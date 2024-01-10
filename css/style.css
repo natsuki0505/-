@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/* リセットCSS */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;  
+}
+
+a {
+	color:inherit;
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: 0.6;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* 全体 */
+h1 {
+  font-size: 4em;
+  letter-spacing: 0.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: 1px solid #ffc0cb;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 0.2rem;
+}
+
+/* ヘッダー */
+header {
+  background-color: #ed143d;
+  color: #fff;
+}
+
+header nav {
+  width: 60%;
+  margin: 0 auto;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+/* ファーストビュー */
+.main-visual {
+  height: 50vh;
+	background-image: url(../img/top_img.jpg);
+	background-position: center;
+	background-size: cover;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  text-align: center;
+}
+
+.main-visual-text {
+  color: #fff;
+}
+
+.main-visual-text .logo {
+  width: 20%;
+}
+
+.main-visual-text p {
+  font-size: 18px;
+}
+
+/* ニュース */
+
+.news-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.news-list  {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: space-evenly;
+}
+
+.news-list li{	
+	padding-bottom:20px;
+	box-shadow: 0 0 10px #ddd;
+}
+.news-list p{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-align: justify;
+}
+
+.news-time {
+	background-color: red;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 10px;
+	padding: 0 5px;
+}
+
+.news-title {
+	font-size: 14px;
+	color: #6495ed;
+  margin-left: 0.2rem;
+}
+
+
+/* アクセス */
+
+.access-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.access{
+	margin-bottom: 30px;
+}
+
+.access-container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly;	
+	margin: 0 auto;
+	max-width: 1180px;
+}
+
+.access-container img {
+	width: 300px;
+}
+
+iframe{
+    vertical-align: bottom
+}
+
+table {
+	margin-left: 20px;
+	border-top: 0.5px dotted #000;
+}
+
+th{
+  vertical-align: top;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-bottom:0.5px dotted #000;
+}
+
+td {
+	vertical-align: top;
+	padding-left: 0.5rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	border-bottom:0.5px dotted #000;
+}
+
+/* フッター */
+footer {
+	background-color: #ed143d;
+	height: 30px;
+	text-align: center;
+	color: #fff;
+}

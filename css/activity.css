@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+* {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.activity-btn ul {
+    max-width: 75vw;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    position: -webkit-sticky;
+    /*これ無いとsafari崩れる*/
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.activity {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+.animal {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+.food {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+h2 img {
+    margin: 0 auto 40px auto;
+}
+
+.contant-container ul img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+dt {
+    margin: 20px auto 15px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 15px;
+}
+
+.area {
+    margin-bottom: 40px;
+    text-align: end;
+    font-size: 12px;
+}
+
+.schedule h2 img {
+    margin-top: 40px;
+}
+
+/* おすすめの過ごしかたコンテンツ↓ */
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 66px;
+}
+
+.schedule-img {
+    max-width: 105px;
+}
+
+.schedule-img p {
+    text-align: center;
+}
+
+.text {
+    width: 60%;
+}
+
+.foot {
+    max-width: 47px;
+    margin: 20px auto;
+    transform: rotateX(180deg);
+    display: flex;
+    justify-content: center;
+}
+
+/* おすすめの過ごしかたコンテンツ↑ */
+
+.catbus {
+    margin: 80px auto 0 auto;
+}
+
+/* topへ戻るボタン↓ */
+
+.pagetop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: -75px;
+}
+
+.pagetop img {
+    max-width: 50%;
+}
+
+/* topへ戻るボタン ↑ */
+
+@media(min-width:767px) {
+    .wrap {
+        max-width: 100%;
+        margin: 0 30px;
+    }
+}
+
